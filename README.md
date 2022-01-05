@@ -1,7 +1,7 @@
-###背景
+### 背景
 Bitmap实现的用户行为留存数据在hive也有相应的备份，为了保证impala和hive一致，在用hive建仓库时将二进制数据进行base64编码以字符串存储。
 
-###使用
+### 使用
 如果使用hive来实现bitmap查询逻辑，需要添加UDF和UDAF两种自定义函数，具体操作如下：
 * 添加jar包和创建函数
 add jar /opt/jobs/bitmap-hive-udf.jar;
